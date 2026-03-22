@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    
+</head>
+<body>
+
+    <div id="result"></div>
+
+    <table>
+        <tr>
+        <td onclick="delete_all()">AC</td>
+        <td onclick="delete1()">Del</td>
+        <td></td>
+        <td onclick="append_to_area(' / ')">/</td>
+        </tr>
+    
+        <tr>
+        <td onclick="append_to_area(7)">7</td>
+        <td onclick="append_to_area(8)">8</td>
+        <td onclick="append_to_area(9)">9</td>
+        <td onclick="append_to_area(' * ')">x</td>
+        </tr>
+    
+        <tr>
+        <td onclick="append_to_area(4)">4</td>
+        <td onclick="append_to_area(5)">5</td>
+        <td onclick="append_to_area(6)">6</td>
+        <td onclick="append_to_area(' + ')">+</td>
+        </tr>
+    
+        <tr>
+        <td onclick="append_to_area(1)">1</td>
+        <td onclick="append_to_area(2)">2</td>
+        <td onclick="append_to_area(3)">3</td>
+        <td onclick="append_to_area(' - ')">-</td>
+        </tr>
+    
+        <tr>
+        <td onclick="append_to_area(0)">0</td>
+        <td onclick="append_to_area('.')">,</td>
+        <td id="previous">ANS</td>
+        <td id="equals" onclick="get_result()">=</td >
+        </tr>
+    </table>
+
+   
+</body>
+</html>
